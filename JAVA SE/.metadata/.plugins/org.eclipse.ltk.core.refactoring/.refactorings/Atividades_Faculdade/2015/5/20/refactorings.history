@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.impacta.segundobimentre.MétodosVetores&apos; to &apos;MetodosVetores&apos;&#x0D;&#x0A;- Original project: &apos;Atividades_Faculdade&apos;&#x0D;&#x0A;- Original element: &apos;com.impacta.segundobimentre.MétodosVetores&apos;&#x0D;&#x0A;- Renamed element: &apos;com.impacta.segundobimentre.MetodosVetores&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MétodosVetores&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.impacta.segundobimentre{MétodosVetores.java[MétodosVetores" matchStrategy="1" name="MetodosVetores" qualified="false" references="true" similarDeclarations="false" stamp="1431642927111" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+package com.impacta.java.treinamento.primitives;
+
+public class PrimitivesTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

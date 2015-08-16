@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;GUItip.gif.gif&apos; to &apos;GUItip.gif.gif&apos;&#x0D;&#x0A;- Original project: &apos;ComoProgramar&apos;&#x0D;&#x0A;- Destination element: &apos;GUItip.gif.gif&apos;&#x0D;&#x0A;- Original element: &apos;GUItip.gif.gif&apos;" description="Copy file" element1="src/com/npsoftwares/grafics/windows/GUItip.gif.gif" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1434507568969" target="/ComoProgramar/src/com/npsoftwares/grafics/windows/GUItip.gif.gif" units="0" version="1.0"/>
+</session>

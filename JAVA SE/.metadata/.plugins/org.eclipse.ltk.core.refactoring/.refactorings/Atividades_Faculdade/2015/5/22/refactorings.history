@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.impacta.segundobimentre.linear&apos; to &apos;com.impacta.segundobimentre.buscaeordenacao&apos;&#x0D;&#x0A;- Original project: &apos;Atividades_Faculdade&apos;&#x0D;&#x0A;- Original element: &apos;Atividades_Faculdade/src/com.impacta.segundobimentre.linear&apos;&#x0D;&#x0A;- Renamed element: &apos;Atividades_Faculdade/src/com.impacta.segundobimentre.buscaeordenacao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.impacta.segundobimentre.linear&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.impacta.segundobimentre.linear" name="com.impacta.segundobimentre.buscaeordenacao" qualified="false" references="true" stamp="1432853015840" textual="false" version="1.0"/>
+</session>

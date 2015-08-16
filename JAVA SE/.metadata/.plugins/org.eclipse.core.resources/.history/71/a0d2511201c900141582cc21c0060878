@@ -1,0 +1,22 @@
+package com.npsoftwares.atvd;
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class TestGradeBook {
+
+	public static void main(String[] args) {
+	
+		
+		GradeBook book1 = new GradeBook("Matemática", "João Paulo");
+		
+		String aluno;
+		
+		Scanner scan = new Scanner(System.in);
+		aluno = JOptionPane.showInputDialog("Nome do aluno!");
+		book1.displayMenssage(aluno);
+		
+		scan.close();
+	
+	}
+
+}

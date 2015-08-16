@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class Atividade_1 {
+
+	public static void main(String[] args) {
+	
+		String nome1 = "Sebastiao";
+		String nome2 = new String("Sebastiao");
+		
+		System.out.println(nome1==nome2);
+	
+		}
+	}
+		
+		/*Scanner scan = new Scanner(System.in);
+		int contador = 0;
+		
+		System.out.println("Informa respectivamente a quantidade de competidores e o número minimo de pontos a ser atingido.");
+        System.out.print("--> ");
+        int competidores = scan.nextInt();
+        System.out.print("--> ");
+        int pontos = scan.nextInt();
+        
+        int i=0;
+        
+        System.out.println("Informe a nota 1 e a nota 2 de cada competidor:");
+        do{
+        	int nota1 = scan.nextInt();
+        	int nota2 = scan.nextInt();
+        	System.out.println("---");
+        	if(nota1+nota2 >= pontos){
+        		contador++;
+        	}
+        	i++;
+        }
+        while(i < competidores);
+        
+        System.out.println(contador);*/

@@ -1,0 +1,15 @@
+package com.npsoftwares.atvd;
+
+public class TestGradeBook {
+
+	public static void main(String[] args) {
+	
+		
+		GradeBook book1 = new GradeBook("Matemática", "João Paulo");
+		
+		book1.displayMenssage("José Clementino");
+		
+
+	}
+
+}

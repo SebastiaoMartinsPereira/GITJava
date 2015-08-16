@@ -1,0 +1,43 @@
+package com.npsoftwares.atvd;
+
+public class GradeBook {
+
+	private String coursename;
+	private String instrutorname;
+	
+	
+	public GradeBook(String name, String instrutor){
+		
+		coursename = name;
+		instrutorname = instrutor;
+		
+	}
+
+	public void setCourseName(String name){
+		
+		coursename = name;	
+	}
+	
+	public String getCourseName(){
+		
+		return coursename;
+	}
+	
+	public void setInstrutorName(String instrutor){
+		
+		instrutorname = instrutor;
+	}
+	
+	public String getInstrutorName(){
+		
+		return instrutorname;
+	}
+	
+	public void displayMenssage(){
+		
+		System.out.printf("Bem vindo ao curso de %s", getCourseName() );
+		
+	}
+	
+}
+

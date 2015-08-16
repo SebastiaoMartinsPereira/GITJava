@@ -1,0 +1,37 @@
+package com.npsoftwares.grafics.windows;
+
+import java.awt.BorderLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JFrame;
+
+
+public class LabelDemo {
+	
+	
+	public static void main(String[] args) {
+		
+		JLabel northlabel = new JLabel("North");
+		
+		ImageIcon labelIcon = new ImageIcon("Bibliotecas\\Imagens\\GUItip.gif");
+		
+		JLabel centerLabel = new JLabel(labelIcon);
+		
+		JLabel southLabel = new JLabel(labelIcon);
+		
+		southLabel.setText("South" + 123);
+		
+		JFrame application = new  JFrame();
+		
+		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		application.add(northlabel,BorderLayout.NORTH);
+		application.add(centerLabel,BorderLayout.CENTER);
+		application.add(southLabel,BorderLayout.LINE_START);
+		
+		application.setSize(300, 300);
+		application.setVisible(true);
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class Atividade_1 {
+
+	public static void main(String[] args) {
+	
+		String nome1 = "Sebastiao";
+		String nome2 = new String("Sebastiao");
+		
+		System.out.println(nome1==nome2);
+	
+		}
+	}
+	
