@@ -1,0 +1,52 @@
+package br.com.npsoftwares.jdbc.teste;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.npsoftwares.jdbc.ConnectionFactory;
+
+public class TestConnection {
+
+	public static void main(String[] args) {
+		
+		Connection conn;
+		
+		conn = ConnectionFactory.openConn("localhost", "1433", "JDBCTEST", "sa", "NPS300892");
+	
+		testeConn(conn);
+		
+	}
+	
+	private static void testeConn(Connection conn)
+	{
+		try {
+			
+			if(!conn.isClosed())
+			{
+				System.out.println("Yes!!!");
+			}
+			
+			conn.close();
+			
+			if(conn.isClosed())
+			{
+			   System.out.println("Fechou");	
+			}
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+	}
+	
+	
+	private static void textInsert(Connection conn,String nome,String,email,String endereco,String dataNascimento)
+	{
+	     StringBuilder sbQuery = new StringBuilder();
+	     
+	     sbQuery.append("INSERT INTO tb0001_Contatos (");
+	     sbQuery.append("nomeCONTATO,emailCONTATO,enderecoCONTATO,dataNascimentoCONTATO) VALUES(");
+	     sbQuery.append(String.format("'%s','%s','%','%s')", nome,email,endereco,dataNascimento));
+	}
+}
+

@@ -1,0 +1,5 @@
+package br.com.npsoftwares.jdbc.teste;
+
+public class TestConnection {
+
+}

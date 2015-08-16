@@ -1,0 +1,13 @@
+package br.com.npsoftwares.jdbc.modelo;
+
+import br.com.npsoftwares.jdbc.ConnectionFactory;
+
+public class ContatoDao {
+
+	private Connection conn;
+	
+	public ContatoDao()
+	{
+		this.conn = new ConnectionFactory().getConn();
+	}
+}

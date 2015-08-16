@@ -1,0 +1,31 @@
+package br.com.npsoftwares.jdbc.teste;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.npsoftwares.jdbc.ConnectionFactory;
+
+public class TestConnection {
+
+	public static void main(String[] args) {
+		
+		Connection conn;
+		
+		conn = ConnectionFactory.openConn("localhost", "1433", "JDBCTEST", "sa", "NPS300892");
+		
+		
+		try {
+			
+			if(!conn.isClosed())
+			{
+				System.out.println("Yes!!!");
+			}
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
+}
+

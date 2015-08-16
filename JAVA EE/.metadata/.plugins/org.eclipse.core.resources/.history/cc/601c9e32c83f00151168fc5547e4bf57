@@ -1,0 +1,13 @@
+package br.com.npsoftwares.jdbc.teste;
+
+import br.com.npsoftwares.jdbc.ConnectionFactory;
+
+public class TestConnection {
+
+	public static void main(String[] args) {
+		
+		ConnectionFactory.openConn("localhost", "1433", "JBBCTEST", "sa", "NPS300892");
+		
+	}
+}
+

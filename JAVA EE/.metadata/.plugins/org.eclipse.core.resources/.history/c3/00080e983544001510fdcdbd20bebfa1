@@ -1,0 +1,5 @@
+package br.com.npsoftwares.jdbc.modelo;
+
+public class ContatoDao {
+
+}

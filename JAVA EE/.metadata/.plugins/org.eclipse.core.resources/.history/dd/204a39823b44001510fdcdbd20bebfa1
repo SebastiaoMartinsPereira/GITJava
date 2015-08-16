@@ -1,0 +1,44 @@
+package br.com.npsoftwares.jdbc.teste;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Calendar;
+
+import br.com.npsoftwares.jdbc.ConnectionFactory;
+
+public class TestConnection {
+
+	public static void main(String[] args) {
+		
+		Connection conn;
+		
+		conn = ConnectionFactory.getConn("localhost", "1433", "JDBCTEST", "sa", "NPS300892");
+	
+		testeConn(conn);
+			
+	}
+	
+	
+	private static void testeConn(Connection conn)
+	{
+		try {
+			
+			if(!conn.isClosed())
+			{
+				System.out.println("Yes!!!");
+			}
+			
+			conn.close();
+			
+			if(conn.isClosed())
+			{
+			   System.out.println("Fechou");	
+			}
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+	}
+}

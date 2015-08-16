@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ContatoDao.java&apos; to &apos;Fj21/src/br.com.npsoftwares.djbc.dao&apos;&#x0D;&#x0A;- Original project: &apos;Fj21&apos;&#x0D;&#x0A;- Destination element: &apos;Fj21/src/br.com.npsoftwares.djbc.dao&apos;&#x0D;&#x0A;- Original element: &apos;br.com.npsoftwares.jdbc.modelo.ContatoDao.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;br.com.npsoftwares.djbc.dao" element1="/src&lt;br.com.npsoftwares.jdbc.modelo{ContatoDao.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1439744709075" units="1" version="1.0"/>
+</session>
