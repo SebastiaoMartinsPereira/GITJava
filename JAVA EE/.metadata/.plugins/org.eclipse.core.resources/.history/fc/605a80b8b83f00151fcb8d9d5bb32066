@@ -1,5 +1,0 @@
-package br.com.npsoftwares.jdbc;
-
-public class ConnectionFactory {
-
-}
