@@ -1,5 +1,0 @@
-package br.com.npsoftwares.jdbc.dao.exception;
-
-public class DaoException {
-
-}
