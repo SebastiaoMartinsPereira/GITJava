@@ -1,0 +1,15 @@
+import java.awt.List;
+
+public class Jogador {
+	
+	private List cartas;
+	
+	public void somaPontos(){
+		
+	}
+	
+	public void mostraPontos(){
+		
+	}
+	
+}

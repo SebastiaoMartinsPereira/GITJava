@@ -1,0 +1,28 @@
+
+public enum tipoCarta {
+
+	DOIS("Naipe de Espadas"),
+	TRES("Naipe de Copas"),
+	QUATRO("Naipe de Paus"),
+	CINCO("Naipe de Ouro"),
+	CINCO("Naipe de Ouro"),
+	CINCO("Naipe de Ouro"),
+	
+	CINCO("Naipe de Ouro"),
+	
+	CINCO("Naipe de Ouro"),
+	
+	CINCO("Naipe de Ouro"),
+	CINCO("Naipe de Ouro"),
+	CINCO("Naipe de Ouro"),
+	CINCO("Naipe de Ouro");
+	
+	
+	private tipoNaipe(String descricao){
+		this.descricao=descricao;
+	}
+	
+	String descricao;
+	
+
+}

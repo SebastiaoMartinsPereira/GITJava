@@ -1,0 +1,63 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Baralho {
+
+	private List<Carta> cartasFora = new ArrayList<Carta>();
+	private List<Carta> cartasNoBaralho = new ArrayList<Carta>();
+	
+	public Baralho(){
+		
+		
+	}
+	
+	
+	public void montarBaralho(){
+		
+	private List<tipoFace> faces = new ArrayList<tipoFace>();
+	private List<tipoNaipe> naipes = new ArrayList<tipoNaipe>();
+		
+		
+		for (int i = 0; i < 52; i++) {
+			this.setCartasNoBaralho(cartasNoBaralho);
+		}
+		
+	}
+	
+	
+	public List<Carta> getCartasFora() {
+		return cartasFora;
+	}
+
+	public void setCartasFora(List<Carta> cartasFora) {
+		this.cartasFora = cartasFora;
+	}
+
+	public List<Carta> getCartasNoBaralho() {
+		return cartasNoBaralho;
+	}
+
+	public void setCartasNoBaralho(List<Carta> cartasNoBaralho) {
+		this.cartasNoBaralho = cartasNoBaralho;
+	}
+
+	public List<tipoFace> getFaces() {
+		return faces;
+	}
+
+	public void setFaces(List<tipoFace> faces) {
+		this.faces = faces;
+	}
+
+	public List<tipoNaipe> getNaipes() {
+		return naipes;
+	}
+
+	public void setNaipes(List<tipoNaipe> naipes) {
+		this.naipes = naipes;
+	}
+
+   
+}
+

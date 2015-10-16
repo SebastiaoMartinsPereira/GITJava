@@ -1,0 +1,14 @@
+package br.com.impacta.estrutura;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Pilha pImpar;
+		Pilha pPar;
+		
+		
+		
+		
+	}
+}

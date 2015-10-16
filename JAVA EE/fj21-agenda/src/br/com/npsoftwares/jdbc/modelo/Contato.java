@@ -7,6 +7,7 @@ import java.util.Date;
 
 public class Contato {
 
+	
 	private Long id;;
 	private String nome;
 	private String email;
@@ -128,4 +129,5 @@ public class Contato {
 		return String.format("CONTATO : \nId: %s\nNome: %s\nEmail: %s\nEndereço: %s\nData Nascimento: %s\n",
 				                        this.id,this.nome,this.email,this.endereco,sdf.format(this.dataNascimento.getTime()) );
 	}
+	
 }

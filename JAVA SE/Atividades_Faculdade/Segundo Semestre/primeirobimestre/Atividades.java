@@ -1,6 +1,7 @@
 package primeirobimestre;
 
 import java.math.BigInteger;
+import com.impacta.segundobimentre.MetodosVetores;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -11,10 +12,13 @@ public class Atividades {
 
 	public static void main(String[] args)
 	{
-		for(int counter = 0 ; counter <= 40;counter++)
-		{
-			System.out.printf("Fibonacci of %d is: %d\n",counter,fibonacci(BigInteger.valueOf(counter)));
-		}
+		
+		dividirNmsArray();
+		
+//		for(int counter = 0 ; counter <= 40;counter++)
+//		{
+//			System.out.printf("Fibonacci of %d is: %d\n",counter,fibonacci(BigInteger.valueOf(counter)));
+//		}
 	}
 
 
@@ -104,6 +108,45 @@ public class Atividades {
 		return temporary.toString();
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	public static void dividirNmsArray()
+	{
+		//numeros informados pelo usuário
+		double[] v ={50,10,5,2};
+		
+		double div=v[0];
+		
+		for(int i = 1;i<v.length;i++){
+			div=div/v[i];
+		} 
+		
+		System.out.println(div);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public String toString()
 	{

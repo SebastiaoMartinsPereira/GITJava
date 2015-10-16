@@ -7,12 +7,12 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import br.com.npsoftwares.dao.exception.DaoException;
 import br.com.npsoftwares.jdbc.ConnectionFactory;
+import br.com.npsoftwares.jdbc.exception.DaoException;
 import br.com.npsoftwares.jdbc.modelo.Contato;
 
-
 public class ContatoDao {
+
 
 	private Connection conn;
 	
@@ -27,15 +27,15 @@ public class ContatoDao {
 		 java.sql.Date dataForRecord = new java.sql.Date(Calendar.getInstance().getTimeInMillis());
 		
 	     StringBuilder sbQuery = new StringBuilder();
-	     sbQuery.append("INSERT INTO tb0001_Contatos (");
-	     sbQuery.append("nomeCONTATO,emailCONTATO,enderecoCONTATO,dataNascimentoCONTATO)");
+	     sbQuery.append("INSERT INTO contatos (");
+	     sbQuery.append("nome,email,endereco,dataNascimento)");
 	     sbQuery.append("values(?,?,?,?)");
 	     
 	     try {
 			 
 	    	 PreparedStatement stmt = conn.prepareStatement(sbQuery.toString());
 	    	 
-		     stmt.setString(1, contato.getNome());
+		     stmt.setString(1,contato.getNome());
 		     stmt.setString(2,contato.getEmail());
 		     stmt.setString(3,contato.getEndereco());
 		     stmt.setDate(4,dataForRecord);
@@ -45,7 +45,7 @@ public class ContatoDao {
 		     
 		} catch (Exception e) {
 			
-			throw new DaoException("Houveram problemas durante o Indsert na base de dados.",e);
+			throw new DaoException("Erro ao adicionar novo contato: \n Local: ContatoDao-->addContato \n Motivo:" + e.getMessage(),e);
 		}
 
 	}
@@ -59,12 +59,12 @@ public class ContatoDao {
 			
 		    ArrayList<Contato> contatos = new ArrayList<Contato>();
 			
-			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM tb0001_Contatos WHERE idCONTATO < 10");
+			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM contatos WHERE id < 10");
 			ResultSet rs  = stmt.executeQuery();
 			
 			while(rs.next()){
-				data.setTime(rs.getDate("dataNascimentoCONTATO"));
-				Contato contato = new Contato(rs.getLong("idCONTATO"),rs.getString("nomeCONTATO"),rs.getString("emailCONTATO"),rs.getString("enderecoCONTATO"),data);
+				data.setTime(rs.getDate("dataNascimento"));
+				Contato contato = new Contato(rs.getLong("id"),rs.getString("nome"),rs.getString("email"),rs.getString("endereco"),data);
 				contatos.add(contato);
 			}
 			
@@ -73,7 +73,8 @@ public class ContatoDao {
 			return contatos;
 			
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			
+			throw new DaoException("Erro ao adicionar novo contato: \n Local: ContatoDao-->getList \n Motivo:" + e.getMessage(),e);
 		}
 		
 	}
@@ -92,15 +93,15 @@ public class ContatoDao {
 		
 		try {
 					
-			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM tb0001_Contatos WHERE idCONTATO = ?");
+			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM contatos WHERE id = ?");
 			stmt.setInt(1, id);
 			ResultSet rs  = stmt.executeQuery();
                 
 			while (rs.next()){
 				
-				data.setTime(rs.getDate("dataNascimentoCONTATO"));
+				data.setTime(rs.getDate("dataNascimento"));
 				
-				contato = new Contato(rs.getLong("idCONTATO"),rs.getString("nomeCONTATO"),rs.getString("emailCONTATO"),rs.getString("enderecoCONTATO"),data);
+				contato = new Contato(rs.getLong("id"),rs.getString("nome"),rs.getString("email"),rs.getString("endereco"),data);
 			}
 			
 		    rs.close();
@@ -108,8 +109,9 @@ public class ContatoDao {
 
 			return contato;
 			
-		} catch (Exception e) {                                   
-			throw new RuntimeException(e);
+		} catch (Exception e) {
+			
+			throw new DaoException("Erro ao adicionar novo contato: \n Local: ContatoDao-->pesquisar \n Motivo:" + e.getMessage(),e);
 		}
 		
 	}
@@ -121,7 +123,7 @@ public class ContatoDao {
 	public void altera(Contato contato){
 		
 		StringBuilder sbQuery = new StringBuilder();
-		sbQuery.append("UPDATE tb0001_Contatos set nomeCONTATO= ?,emailCONTATO=?,enderecoCONTATO=?,dataNascimentoCONTATO=? WHERE idCONTATO = ?");
+		sbQuery.append("UPDATE contatos set nome= ?,email=?,endereco=?,dataNascimento=? WHERE id = ?");
 		
 		try {
 			
@@ -135,7 +137,8 @@ public class ContatoDao {
 			stmt.close();
 			
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			
+			throw new DaoException("Erro ao adicionar novo contato: \n Local: ContatoDao-->altera \n Motivo:" + e.getMessage(),e);
 		}
 		
 	}
@@ -143,7 +146,7 @@ public class ContatoDao {
 	public void remove(Contato contato){
 		
 		try {
-			PreparedStatement stmt = conn.prepareStatement("DELETE FROM tb0001_Contatos WHERE idCONTATO  = ?");
+			PreparedStatement stmt = conn.prepareStatement("DELETE FROM contatos WHERE id = ?");
 			stmt.setLong(1, contato.getId());
 			stmt.execute();
 			stmt.close();

@@ -1,0 +1,15 @@
+ 
+
+public class Jogador {
+	
+	private List<Carta>() cartas = new ArrayList<Carta>();
+	
+	public void somaPontos(){
+		
+	}
+	
+	public void mostraPontos(){
+		
+	}
+	
+}

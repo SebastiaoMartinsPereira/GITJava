@@ -1,0 +1,7 @@
+
+public class Naipe {
+	
+	private String nome;
+	
+	
+}

@@ -1,0 +1,21 @@
+
+public enum tipoNaipe {
+	
+	ESPADAS("Naipe de Espadas"),
+	COPAS("Naipe de Copas"),
+	PAUS("Naipe de Paus"),
+	OURO("Naipe de Ouro");
+	
+	
+	private tipoNaipe(String descricao){
+		this.descricao=descricao;
+	}
+	
+	private String descricao;
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+			
+}

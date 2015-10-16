@@ -1,0 +1,12 @@
+
+public class BlackJack {
+	
+	private Baralho baralho;
+	private Cliente cliente;
+	private Banca banca;
+	
+	
+	public void main(){
+		
+	}
+}

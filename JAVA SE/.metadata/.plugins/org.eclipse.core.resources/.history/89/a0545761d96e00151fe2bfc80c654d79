@@ -1,0 +1,7 @@
+
+public class Carta {
+
+	private tipoNaipe naipe;
+	private  tipoFace face;
+	
+}

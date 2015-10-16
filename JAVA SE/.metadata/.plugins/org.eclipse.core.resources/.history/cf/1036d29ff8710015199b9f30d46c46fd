@@ -1,0 +1,6 @@
+
+public class Face {
+
+	private int valor;
+	private String nome;
+}

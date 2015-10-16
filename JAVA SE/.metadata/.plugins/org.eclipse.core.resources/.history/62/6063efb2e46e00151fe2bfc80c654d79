@@ -1,0 +1,7 @@
+
+public class Banca extends Jogador{
+	
+	public Banca(){
+		this.setCartas(cartas);
+	}
+}

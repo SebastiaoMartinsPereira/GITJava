@@ -14,18 +14,25 @@ public class TestConnection {
 		ContatoDao contatoDao = new ContatoDao();
 		ArrayList<Contato> contatos = new ArrayList<Contato>();
 
-		contato = new Contato("Caelum","contato@caelum.com.br","r. Verguerio 3185",Calendar.getInstance());
-	
-		contatoDao.addContato(contato);
-		
-		contatos = contatoDao.getList();
-		
-		for (Contato contato2 : contatos) {
+		try {
 			
-			System.out.println(contato2.toString());
+			contato = new Contato("Caelum","contato@caelum.com.br","r. Verguerio 3185",Calendar.getInstance());
+			
+			contatoDao.addContato(contato);
+			
+			contatos = contatoDao.getList();
+			
+			for (Contato contato2 : contatos) {
+				
+				System.out.println(contato2.toString());
+			}
+				
+			System.out.println(contatoDao.pesquisar(1).toString());
+			
+		} catch (Exception e) {
+			System.out.println(e);
 		}
-			
-		System.out.println(contatoDao.pesquisar(1).toString());
+
 	}
 
 }

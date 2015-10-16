@@ -1,0 +1,18 @@
+
+public enum tipoNaipe {
+	
+	ESPADAS,
+	COPAS,
+	PAUS,
+	OURO;
+	
+	
+	tipoNaipe(){
+		
+	}
+	
+	String descricao;
+	
+	
+	
+}

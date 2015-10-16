@@ -1,0 +1,9 @@
+
+public class Naipe {
+	
+	private tipoNaipe naipe;
+	
+	public Naipe(){
+		
+	}
+}

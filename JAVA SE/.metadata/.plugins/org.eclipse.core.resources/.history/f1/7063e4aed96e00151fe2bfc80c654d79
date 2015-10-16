@@ -1,0 +1,13 @@
+
+public class Carta {
+
+	private tipoNaipe naipe;
+	private  tipoFace face;
+	
+	public Carta(){
+		
+	}
+	
+	
+	public 
+}

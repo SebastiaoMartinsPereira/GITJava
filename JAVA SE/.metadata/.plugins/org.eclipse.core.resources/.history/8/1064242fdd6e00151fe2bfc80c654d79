@@ -1,0 +1,14 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Baralho {
+
+	private List<Carta> cartasFora = new ArrayList<Carta>();
+	private List<Carta> cartasNoBaralho = new ArrayList<Carta>();
+	private List<tipoFace> faces = new ArrayList<tipoFace>();
+	private List<tipoNaipe> naipes = new ArrayList<tipoNaipe>();
+	
+	
+}
+

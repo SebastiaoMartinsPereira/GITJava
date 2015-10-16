@@ -1,0 +1,19 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+
+public class Baralho {
+
+	private ArrayList<Carta> cartasFora;
+	private ArrayList<Carta> cartasNoBaralho;
+	
+	
+	private void getCartaAleatoria(){
+		
+	}
+	
+	
+	private void montarBaralho(){
+		
+	}
+}
