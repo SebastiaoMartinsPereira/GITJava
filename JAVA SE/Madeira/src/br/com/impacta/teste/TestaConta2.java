@@ -2,6 +2,7 @@ package br.com.impacta.teste;
 
 import java.util.ArrayList;
 
+import br.com.impacta.modelos.AtualizaContas;
 import br.com.impacta.modelos.Banco;
 import br.com.impacta.modelos.Conta;
 import br.com.impacta.modelos.ContaCorrente;

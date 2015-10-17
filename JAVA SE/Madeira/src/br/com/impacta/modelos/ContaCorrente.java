@@ -1,6 +1,8 @@
 package br.com.impacta.modelos;
 
-public class ContaCorrente extends Conta {
+import br.com.impacta.modelos.interfaces.Tributavel;
+
+public class ContaCorrente extends Conta implements Tributavel {
 	
 	public ContaCorrente(){
 		
@@ -23,6 +25,11 @@ public class ContaCorrente extends Conta {
 		}else{
 			System.out.println("valor insuficiente para cobrir a taxa de depósito");
 		}
+	}
+
+	public double calculaTributos() {
+		// TODO Auto-generated method stub
+		return this.getSaldo() * 0.01;
 	}
 	
 }

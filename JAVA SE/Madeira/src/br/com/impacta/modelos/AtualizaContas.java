@@ -1,8 +1,6 @@
-package br.com.impacta.teste;
+package br.com.impacta.modelos;
 
 import java.util.ArrayList;
-
-import br.com.impacta.modelos.Conta;
 
 public class AtualizaContas {
 
