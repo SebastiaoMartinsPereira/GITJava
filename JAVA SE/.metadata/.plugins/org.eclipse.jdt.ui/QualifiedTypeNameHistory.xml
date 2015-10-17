@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.BufferCapabilities"/>
-<fullyQualifiedTypeName name="com.npsoftwares.grafics.windows.ButtonFrame.ButtonHandler"/>
-<fullyQualifiedTypeName name="java.awt.Button"/>
-<fullyQualifiedTypeName name="com.npsoftwares.grafics.windows.ButtonFrame"/>
-<fullyQualifiedTypeName name="java.awt.Font"/>
-<fullyQualifiedTypeName name="com.npsoftwares.grafics.windows.CheckBoxFrame.CheckBoxHandler"/>
-<fullyQualifiedTypeName name="com.npsoftwares.grafics.windows.CheckBoxFrame"/>
-<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="com.npsoftwares.conta.TesteConta"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
 <fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
@@ -60,4 +52,12 @@
 <fullyQualifiedTypeName name="Carta"/>
 <fullyQualifiedTypeName name="Cliente"/>
 <fullyQualifiedTypeName name="br.com.impacta.estrutura.Pilha"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.calculaveis.Retangulo"/>
+<fullyQualifiedTypeName name="java.awt.Rectangle"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.calculaveis.Circulo"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.interfaces.AreaCalculavel"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.interfaces.Tributavel"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.GerenciadorDeImpostosDeRenda"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.SeguroDeVida"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.ContaCorrente"/>
 </qualifiedTypeNameHistroy>

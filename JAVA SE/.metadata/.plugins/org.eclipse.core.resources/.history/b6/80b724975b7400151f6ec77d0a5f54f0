@@ -1,0 +1,19 @@
+package br.com.impacta.modelos.calculaveis;
+
+import br.com.impacta.modelos.interfaces.AreaCalculavel;
+
+public class Circulo implements AreaCalculavel{
+
+	private double raio;
+	private int Math.pi;
+	
+	
+	public Circulo(double raio){
+		this.raio = raio;
+	}
+
+	public double calculaArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

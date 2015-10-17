@@ -1,0 +1,16 @@
+package br.com.impacta.teste;
+
+import br.com.impacta.modelos.interfaces.Tributavel;
+
+public class GerenciadorDeImpostosDeRenda {
+	private  double total;
+	
+	void adiciona (Tributavel t){
+		System.out.println("Adicionando tributavel : " + t);
+		this.total += t.calculaTributos();
+	}
+	
+	public double getTotal(){
+		return this.total;
+	}
+}
