@@ -1,8 +1,0 @@
-
-public class Cliente extends Jogador{
-	
-	public Cliente() {
-		super();
-	}
-
-}

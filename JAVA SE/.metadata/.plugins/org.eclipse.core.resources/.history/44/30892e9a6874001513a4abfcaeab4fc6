@@ -23,7 +23,6 @@ public class BlackJack {
 		banca = new Banca();
 		
 	    int res;
-		@SuppressWarnings("unused")
 		Random ram = new Random();
 		Scanner scan = new Scanner(System.in);
 	
