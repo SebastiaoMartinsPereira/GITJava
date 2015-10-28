@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.npsoftwares.conta.TesteConta"/>
-<fullyQualifiedTypeName name="javax.swing.JTextField"/>
-<fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
-<fullyQualifiedTypeName name="com.npsoftwares.grafics.windows.RadioButtonFrame.RadioButtonHandler"/>
-<fullyQualifiedTypeName name="com.npsoftwares.grafics.windows.RadioButtonFrame"/>
-<fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
-<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
-<fullyQualifiedTypeName name="javax.swing.Icon"/>
-<fullyQualifiedTypeName name="javax.swing.JLabel"/>
-<fullyQualifiedTypeName name="com.npsoftwares.grafics.windows.ComboBoxFrame"/>
-<fullyQualifiedTypeName name="java.lang.Cloneable"/>
-<fullyQualifiedTypeName name="javax.swing.JComboBox"/>
-<fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
@@ -60,4 +47,17 @@
 <fullyQualifiedTypeName name="br.com.impacta.modelos.GerenciadorDeImpostosDeRenda"/>
 <fullyQualifiedTypeName name="br.com.impacta.modelos.SeguroDeVida"/>
 <fullyQualifiedTypeName name="br.com.impacta.modelos.ContaCorrente"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.SystemException"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.Funcionario"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.Diretor"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.Data"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.Programador"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="br.com.impacta.modelos.exceptions.BonificacaoIllegalException"/>
 </qualifiedTypeNameHistroy>

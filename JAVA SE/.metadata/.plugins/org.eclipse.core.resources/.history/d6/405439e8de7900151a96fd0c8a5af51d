@@ -1,0 +1,10 @@
+package br.com.impacta.modelos.exceptions;
+
+public class BonificacaoIllegalException extends RuntimeException {
+	
+	public BonificacaoIllegalException(String message,Exception e){
+		
+		super(message, e);
+		
+	}
+}

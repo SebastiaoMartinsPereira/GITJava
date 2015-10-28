@@ -1,0 +1,10 @@
+package br.com.impacta.modelos;
+
+public class Programador extends Funcionario{
+
+	public Programador(String nome,String departamento,double salario,Data dataEntrada,String rg){
+		super(nome, departamento, salario, dataEntrada, rg);
+	}
+	
+	
+}

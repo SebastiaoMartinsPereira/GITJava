@@ -43,7 +43,7 @@ public class Funcionario {
 	}
 	
 
-	public void recebeAumento(Double value){
+	public void bonifica(Double value){
 		
 		setSalario(getSalario() +  value);
 	}

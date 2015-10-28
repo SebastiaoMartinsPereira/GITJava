@@ -31,7 +31,7 @@ public class TesteConta {
         
 		f1.setNome("Hugo");
 		f1.setSalario(100.);
-		f1.recebeAumento(50.);
+		f1.bonifica(50.);
 		
 		System.out.println("Salário Atual :" + f1.getSalario());
 		System.out.println("Ganho anual : "+ f1.calculoGanhoAumento());
@@ -41,7 +41,7 @@ public class TesteConta {
 		
 		f2.setNome("Hugo");
 		f2.setSalario(100.);
-		f2.recebeAumento(50.);
+		f2.bonifica(50.);
 		
 		System.out.println("\nExercicio 4: ");
 		

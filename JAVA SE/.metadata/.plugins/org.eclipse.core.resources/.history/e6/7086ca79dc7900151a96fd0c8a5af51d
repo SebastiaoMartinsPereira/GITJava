@@ -1,0 +1,39 @@
+package br.com.impacta.teste;
+
+import java.util.Scanner;
+
+import br.com.impacta.modelos.Data;
+import br.com.impacta.modelos.Diretor;
+import br.com.impacta.modelos.Funcionario;
+import br.com.impacta.modelos.Programador;
+
+public class TesteException {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		Funcionario diretor = new Diretor("Leandro Rossi", "Diretor de Vendas", 12000.
+				,new Data(24, 04, 1989), "3385351");
+		
+		Funcionario programador = new Programador("Sebastião Martins", "Programador Sênior", 8000.
+				,new Data(24, 04, 1989), "3385351");
+		
+		System.out.println("Valor da Bonificação pra o diretor de vendas.");
+		scan.nextDouble();
+		
+		System.out.println("Valor da Bonificação pra o programador.");
+		scan.nextDouble();
+		
+		System.out.printf("Salário Diretor : %2f",diretor.getSalario());
+		System.out.printf("Salário Diretor : %2f",programador.getSalario());
+		scan.close();
+	}
+	
+	
+
+}
+
+
+
+ 

@@ -1,0 +1,11 @@
+package br.com.impacta.teste;
+
+import br.com.impacta.modelos.Data;
+import br.com.impacta.modelos.Diretor;
+import br.com.impacta.modelos.Funcionario;
+
+public class TesteException {
+	
+	Funcionario diretor = new Diretor("Leandro Rossi", "Diretor de Vendas", 12000.
+			,new Data(24, 04, 1989), 3385351);
+}
