@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class main {
 
+
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
@@ -14,11 +15,7 @@ public class main {
 		int entrada;
 		scan = new Scanner(System.in);
 		
-		
-		int s = 0;
-		while(s == 0)
-			System.out.println("Sebastiao boiola");
-		
+			
 		do {
 			
 			System.out.println("Informe um número qualquer positivo.");
@@ -32,20 +29,18 @@ public class main {
 				
 		} while (count<11);{}
 		
-		System.out.println();
+			System.out.println();
 		
 		while(!pPar.vazia()){
 			
 			System.out.println(pPar.desempilhar());
 		}
 		
-		System.out.println("\n\n");
+			System.out.println("\n\n");
+		
 		while(!pImpar.vazia()){
 			System.out.println(pImpar.desempilhar());
 		}
-		
-		
-		
 		
 	}
 }
