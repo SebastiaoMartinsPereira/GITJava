@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="C:/TomCat/lib/catalina.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="/fj21-agenda/sqljdbc4-2.0.jar"/>
+  <source-attachment entry="C:/TomCat/lib/tomcat-coyote.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="/Servers/Tomcat v7.0 Server at localhost-config"/>
+</classpath>

@@ -1,6 +1,6 @@
 package br.com.impacta.modelos;
 
-public class ContaPoupanca extends Conta{
+public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca>{
 
 	
 	public ContaPoupanca(){
@@ -17,6 +17,34 @@ public class ContaPoupanca extends Conta{
 		
 		this.setSaldo( this.getSaldo()+(this.getSaldo() * (taxa * 3)));
 	}
+
+
+//	@Override
+//	public int compareTo(ContaPoupanca conta) {
+//		
+//		if(this.getNumero() < conta.getNumero())
+//		{
+//			return -1;
+//		}
+//		
+//		if(this.getNumero() > conta.getNumero()){
+//			return 1;
+//		}
+//		
+//		return 0;
+//		
+//	}
+	
+	
+	
+	//alteração para realizar a compração pelo nome do cliente.
+	public int compareTo(ContaPoupanca conta) {
+		
+		return this.getDono().compareTo(conta.getDono());
+
+	}
+	
+	
 }
 
 

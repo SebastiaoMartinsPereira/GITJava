@@ -2,7 +2,7 @@ package br.com.impacta.modelos;
 
 public class Conta {
 
-	int numero;
+	private int numero;
 	private String dono;
 	private Double saldo;
 	private Double limite;

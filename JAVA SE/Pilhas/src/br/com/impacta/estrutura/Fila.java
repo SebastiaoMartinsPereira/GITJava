@@ -10,7 +10,7 @@ public class Fila<T>{
     
      @SuppressWarnings("unchecked")
 	public Fila(){
-	item = (T[])new Object[MAX];
+	    item = (T[])new Object[MAX];
         fim = 0;
         inicio = 0;
         cont = 0; 

@@ -11,7 +11,7 @@ public class ConnectionFactory {
 	private static String usuario = "sa";
 	private static String pass = "NPS300892";
 	private static String driverSqlServer = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	
+
 	public static Connection getConn()
 	{
 		try {
