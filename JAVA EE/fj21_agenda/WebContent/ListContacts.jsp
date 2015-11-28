@@ -10,8 +10,9 @@
 	</head>
 	<body>
 	 	<c:import url="Cabecalho.jsp"/>
+	 	
 	    <!-- Cria (instância) a classe Dao -->
-		<jsp:useBean id="dao" class="br.com.npsoftwares.jdbc.dao.ContatoDao" />
+		<%-- <jsp:useBean id="dao" class="br.com.npsoftwares.jdbc.dao.ContatoDao" /> --%>
 		
 		<table width="100%">
 			<!-- Percorre contatos montando as linhas da tabela -->
@@ -19,7 +20,7 @@
 			<%String color = "green"; %>
 			<tr><th width="25%" align="left" bgcolor= "grey">Nome</th> <th width="25%" align="left" bgcolor= "#D3D3D3" >Email</th> <th width="25%" align="left" bgcolor= "grey" >Endereço</th> <th width="25%" align="left" bgcolor= "#D3D3D3">Data Nasc.</th></tr>
 			
-			<c:forEach var="contato" items="${dao.list}" varStatus="id"> 
+			<c:forEach var="contato" items="${contatos}" varStatus="id"> 
 				<tr bgcolor= "#${id.count % 2 == 0 ? 'aaee88' : 'ffffff'  }" >
 					<td width="25%" align="left">${contato.nome}</td>
 					<td width="25%" align="left" > 

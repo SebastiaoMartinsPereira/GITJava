@@ -1,0 +1,13 @@
+package br.com.impacta.estrutura;
+
+public class InsertionSort {
+	
+	public static void main(String[] args) {
+		double[] numeros = new double[5];
+		
+		for (int i = 0; i < numeros.length; i++) {
+			 numeros[i] = i * Math.random();
+		}
+		
+	}
+}

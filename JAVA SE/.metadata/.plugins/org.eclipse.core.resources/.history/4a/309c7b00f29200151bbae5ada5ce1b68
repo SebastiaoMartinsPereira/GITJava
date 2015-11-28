@@ -1,0 +1,7 @@
+package newprogsoftwares.estruturadedados.fj14;
+
+public class TesteLinkedList {
+
+	DoubleLinkedList_fj14 lista = (DoubleLinkedList_fj14) new LinkedList_fj14();
+	
+}

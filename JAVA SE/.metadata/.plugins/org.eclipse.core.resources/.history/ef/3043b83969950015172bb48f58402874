@@ -1,0 +1,39 @@
+package br.com.impacta.estrutura;
+
+public class InsertionSort {
+
+	public static void main(String[] args) {
+		double[] numeros = new double[5];
+
+		for (int i = 1; i < numeros.length; i++) {
+			numeros[i-1] = i * Math.random();
+		}
+		
+		for(double num : insertionSort(numeros)){
+			System.out.println("num - " + num);	
+		}
+
+	}
+
+	public static double[] insertionSort(double[] numeros) {
+		//declareção de variaveis.
+		int i, j;
+		double daVez;//numero da rodada a ser verificado.
+
+		for (i = 1; i < numeros.length; i++) { //iterage em todos os elementos do array.
+
+			daVez = numeros[i];
+
+			j = i;
+
+			while ((j > 0) && (numeros[j - 1] > daVez)) {
+				numeros[j] = numeros[j - 1];
+				j = j - 1;
+			}
+			numeros[j] = daVez;
+		}
+
+		return numeros;
+
+	}
+}

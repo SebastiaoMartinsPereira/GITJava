@@ -1,0 +1,12 @@
+package newprogsoftwares.estruturadedados.fj14;
+
+public class TesteLinkedList {
+
+	
+	
+    public static void main(String[] args) {
+    	LinkedList_fj14 lista;
+		lista = new LinkedList_fj14();
+	}
+	
+}

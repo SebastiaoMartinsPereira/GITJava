@@ -1,0 +1,16 @@
+package newprogsoftwares.estruturadedados.fj14;
+
+public class Arvore {
+	
+	Node esquerda;
+	Node direita;
+	Object element;
+	
+	public Arvore(){
+		esquerda = null;
+		direita = null;
+	}
+	
+	
+
+}

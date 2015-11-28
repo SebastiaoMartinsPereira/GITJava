@@ -1,0 +1,67 @@
+package newprogsoftwares.estruturadedados.fj14;
+
+public class Arvore {
+	
+	private Arvore esquerda;
+	private Arvore direita;
+	private Aluno raiz;
+	
+	public Arvore(){
+		setEsquerda(null);
+		setDireita(null);
+	}
+	
+	
+	public Arvore 
+	public void criarArvore(Node noRaiz){
+		noRaiz = null;
+	}
+	
+	public void inserir(Object element){
+		if(raiz == null){
+			raiz
+		}
+	}
+
+
+	public Arvore getEsquerda() {
+		return esquerda;
+	}
+
+
+	public void setEsquerda(Arvore esquerda) {
+		this.esquerda = esquerda;
+	}
+
+
+	public Arvore getDireita() {
+		return direita;
+	}
+
+
+	public void setDireita(Arvore direita) {
+		this.direita = direita;
+	}
+
+
+	public Node getRaiz() {
+		return raiz;
+	}
+
+
+	public void setRaiz(Node no) {
+		this.raiz = raiz;
+	}
+	
+	public void inserir(Node no){
+		
+		if(this.raiz == null){
+			this.raiz = no;
+		}else{
+			if(no.getElemento() this.raiz.getElemento()){
+				
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,14 @@
+package newprogsoftwares.estruturadedados.fj14;
+
+public class Node {
+
+	private Node next;
+	
+	private Object elemento;
+	
+	public Celula(Celula next,Object elemento){
+		this.next = next;
+		this.elemento = elemento;
+	}
+	
+}

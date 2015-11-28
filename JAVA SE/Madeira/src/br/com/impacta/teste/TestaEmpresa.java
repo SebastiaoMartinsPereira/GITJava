@@ -1,8 +1,10 @@
 package br.com.impacta.teste;
 
 import java.util.Scanner;
+
 import br.com.impacta.modelos.Empresa;
 import br.com.impacta.modelos.Funcionario;
+import br.com.impacta.modelos.UtilityOO;
 
 public class TestaEmpresa {
 	

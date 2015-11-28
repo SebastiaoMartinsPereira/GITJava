@@ -1,11 +1,14 @@
 package br.com.impacta.modelos;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class Banco {
 
 	private Conta[] listaContas;
-
+    private List<Conta> contas;
+    private Map<String, Conta> mapContas;
 	
 	public Banco(){
 		
@@ -25,7 +28,7 @@ public class Banco {
 	}
 	
 	
-	public void addConta(Conta c){
+  /*	public void addConta(Conta c){
 		
 		for (int i = 0; i < this.listaContas.length; i++) {
 			if(this.listaContas[i]==null){
@@ -37,7 +40,28 @@ public class Banco {
 		
 		addConta(c);
 		
+	}*/
+	
+	
+	public void addConta(Conta c){
+		this.contas.add(c);
+		this.mapContas.put(c.getDono(), c);
 	}
+	
+	public Conta pega(int x){
+	     return this.contas.get(x);	
+	}
+	
+	public int pegaQuantidadeDeContas(){
+		return this.contas.size();
+	}
+	
+	public Conta buscaPorNome(String nome){
+		
+		return this.mapContas.get(nome);
+
+	}
+	
 	
 	public Conta pegaConta(int x){
 		
@@ -68,6 +92,7 @@ public class Banco {
 	}
 	
 	
+	@SuppressWarnings("unused")
 	private void aumentaListaContas(Conta[] listaContas){
 		
 		Conta[] novaLista = new Conta[listaContas.length+10];

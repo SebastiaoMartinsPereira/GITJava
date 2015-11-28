@@ -29,12 +29,10 @@
 <fullyQualifiedTypeName name="java.awt.Container"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-<fullyQualifiedTypeName name="br.com.npsoftwares.jdbc.dao.ContatoDao"/>
 <fullyQualifiedTypeName name="sun.print.resources.serviceui"/>
 <fullyQualifiedTypeName name="javax.servlet.annotation.WebInitParam"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
-<fullyQualifiedTypeName name="br.com.npsoftwares.jdbc.modelo.Contato"/>
 <fullyQualifiedTypeName name="br.com.npsoftwares.djbc.dao.ContatoDao"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -51,4 +49,7 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="br.com.caelum.mvc.logica.Logica"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.npsoftwares.jdbc.modelo.Contato"/>
+<fullyQualifiedTypeName name="br.com.npsoftwares.jdbc.dao.ContatoDao"/>
 </qualifiedTypeNameHistroy>

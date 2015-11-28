@@ -1,0 +1,126 @@
+package newprogsoftwares.estruturadedados.fj14;
+
+public class LinkedList_fj14 {
+
+	Node first;
+	Node last;
+	private int totalizer;
+	
+	public LinkedList_fj14() {
+		this.setTotalizer(0);
+		this.first = null;
+		this.last = null;
+    }
+	
+	public void addToEnd(Object element){
+		
+		if(isVoid()){
+			this.addToStart(element);
+		}
+		else{
+			
+			Node nova = new Node(element);
+			this.last.setNext(nova);
+			this.last = nova;
+			this.totalizer++;
+		}
+		
+		
+	}
+	
+	public Object pega(int position){return null;}
+	
+	public void remove(int position){}
+	
+	public int tamanho(){return 0;}
+    
+	public boolean contains(){return false;}
+	
+	public void addToStart(Object element){
+		
+		Node aux = new Node(first, element);
+				
+				if(isVoid()){
+					last = first = aux;
+					this.totalizer++;
+					return;
+				}
+				
+				last = first;
+				first= aux;
+		        
+				this.totalizer++;
+	}
+	
+	public void add(Object element,int position){
+		if(position == 0){
+			this.addToStart(element);
+		}else if(position == this.totalizer){
+			this.addToEnd(element);
+		}else{
+			Node lastAux = this.catchNode(position-1);
+			Node newAux = new Node(lastAux.getNext(),element);
+			lastAux.setNext(newAux);
+			this.totalizer++;
+		}
+	}
+	
+	
+	public void removeToStart(){}
+	
+	public void removeToEnd(){};
+	
+	public Boolean isVoid(){
+		return this.getTotalizer() > 0;
+	}
+
+	public int getTotalizer() {
+		return totalizer;
+	}
+
+	public void setTotalizer(int totalizer) {
+		this.totalizer = totalizer;
+	}
+	
+	private boolean  isOcuppedPosition(int position){
+	    return position >= 0 && position < this.totalizer;
+	}
+	
+	private Node catchNode(int position){
+		
+		if(!isOcuppedPosition(position)){
+			throw new IllegalArgumentException("Posição não Existente!");
+		}
+		
+	    Node current = first;
+      
+	    for(int  i = 0 ;i<position ;i++){
+	    	current = (Node) current.getNext();
+	    }
+	    
+	    return current;
+	}
+	
+    @Override
+	public String toString() {
+		
+    	if(isVoid()){
+    		return "[]";
+    	}
+    	
+    	StringBuilder sb = new StringBuilder("[");
+    	Object atual = this.first;
+    	
+    	for(int i=0;i<this.totalizer-1;i++){
+    		sb.append(((Node) atual).getElemento());
+    		sb.append(",");
+    		atual = ((Node) atual).getElemento();
+    	}
+    	
+    	sb.append(((Node)atual).getElemento());
+    	sb.append("]");
+    	
+		return sb.toString();
+	}
+
+}
