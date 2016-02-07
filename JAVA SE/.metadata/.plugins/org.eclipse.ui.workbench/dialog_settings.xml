@@ -10,12 +10,20 @@
 		<item value="525" key="dialogHeight"/>
 		<item value="1025" key="dialogWidth"/>
 		<list key="textEntries">
+			<item value="1"/>
+			<item value="1"/>
 		</list>
 		<list key="orderedElements">
+			<item value="org.eclipse.jdt.debug.ui.DisplayView"/>
+			<item value="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.jdt.debug.ui.DisplayView)"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textArray">
+			<item value="display"/>
+			<item value="displa"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

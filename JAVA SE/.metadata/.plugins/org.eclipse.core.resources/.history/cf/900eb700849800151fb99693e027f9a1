@@ -1,0 +1,38 @@
+package newprogsoftwares.estruturadedados.fj14;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Pilha {
+
+	int cont;
+	private List<Peca> pecas = new  ArrayList<Peca>();
+	
+	public Pilha(){
+		cont=0;
+	}
+	
+	public void insere(Peca peca){
+		this.pecas.add(cont,peca);
+		cont++;
+	}
+	
+	public Peca remove(){
+		
+	}
+	
+	public boolean vazia(){
+		
+	}
+	
+	
+
+	public List<Peca> getPecas() {
+		return pecas;
+	}
+
+	public void setPecas(List<Peca> pecas) {
+		this.pecas = pecas;
+	}
+}

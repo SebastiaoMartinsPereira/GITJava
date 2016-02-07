@@ -17,7 +17,6 @@ public class Fila<T>{
 
      } 
 
- 
      public void inserir(T valor){
          if (!cheia()){
             item[fim] = valor;

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Jogador"/>
-<fullyQualifiedTypeName name="Naipe"/>
-<fullyQualifiedTypeName name="tipoCarta"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="tipoFace"/>
-<fullyQualifiedTypeName name="tipoNaipe"/>
 <fullyQualifiedTypeName name="Baralho"/>
 <fullyQualifiedTypeName name="Carta"/>
 <fullyQualifiedTypeName name="Cliente"/>
@@ -19,7 +13,6 @@
 <fullyQualifiedTypeName name="br.com.impacta.modelos.SeguroDeVida"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.SystemException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="br.com.impacta.modelos.Funcionario"/>
 <fullyQualifiedTypeName name="br.com.impacta.modelos.Diretor"/>
 <fullyQualifiedTypeName name="br.com.impacta.modelos.Data"/>
@@ -37,11 +30,8 @@
 <fullyQualifiedTypeName name="br.com.impacta.modelos.ContaCorrente"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.lang.InternalError"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="br.com.impacta.modelos.Conta"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
@@ -54,10 +44,20 @@
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="newprogsoftwares.estruturadedados.fj14.DoubleLinkedList_fj14"/>
-<fullyQualifiedTypeName name="newprogsoftwares.estruturadedados.fj14.LinkedList_fj14"/>
 <fullyQualifiedTypeName name="newprogsoftwares.estruturadedados.fj14.Arvore"/>
 <fullyQualifiedTypeName name="newprogsoftwares.estruturadedados.fj14.Aluno"/>
 <fullyQualifiedTypeName name="br.com.impacta.estrutura.main"/>
+<fullyQualifiedTypeName name="br.com.impacta.estrutura.ordenacao.MargeSort"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="newprogsoftwares.estruturadedados.fj14.LinkedList_fj14"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="newprogsoftwares.estruturadedados.fj14.Cript"/>
+<fullyQualifiedTypeName name="newprogsoftwares.estruturadedados.fj14.Pilha"/>
+<fullyQualifiedTypeName name="java.sql.Wrapper"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,25 @@
+package br.com.impacta.estrutura.ordenacao;
+
+public class MergeSort {
+
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public static void mergeSort(int[] a,int inicio,int fim){
+		
+		if(fim < inicio){
+			return;
+		}
+		
+		int meio = (inicio + fim )/2;
+		
+		mergeSort(a, inicio, meio);
+		mergeSort(meio+1,fim);
+		
+		
+		
+	}
+}

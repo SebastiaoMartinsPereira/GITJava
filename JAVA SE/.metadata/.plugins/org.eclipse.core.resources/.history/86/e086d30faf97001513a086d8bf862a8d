@@ -1,0 +1,84 @@
+package br.com.impacta.estrutura.ordenacao;
+
+public class MergeSort {
+
+	
+	public static void main(String[] args) {
+		int[] a = new int[20];
+		
+		for (int i = 0; i < a.length; i++) {
+			a[i] = (int)(Math.random() * 220);
+		}
+		
+		mergeSort(a, 0, a.length-1);
+
+	}
+
+	public static void mergeSort(int[] a, int inicio, int fim) {
+
+		if (fim <= inicio) {//se o valor pasado para o fim for menor que o inicio retorna para a função de chamada;
+			return;
+		}
+        
+		//identiico o meio entre os extremos informados
+		int meio = (inicio + fim) / 2;
+        
+		//chamada recursiva para quebrar a array varias vezes.
+		mergeSort(a, inicio, meio);
+		mergeSort(a, meio + 1, fim);
+        
+		//cria um nova array para conter uma metade a ser verificada
+		int[] A = new int[meio - inicio + 1];
+		//cria um segundo arraypara a segunda etade a ser verificada.
+		int[] B = new int[fim - meio];
+		
+        //recupera os valores nos indices na matriz principal
+		for (int i = 0; i <= meio - inicio; i++) {
+			A[i] = a[inicio + i];
+		}
+		
+		//recupera os avalores nos indeces na matriz principal
+		for (int i = 0; i <= fim - meio - 1; i++) {
+			B[i] = a[meio + 1 + i];
+		}
+        
+		System.out.println("\nA");
+		for (int i = 0; i < A.length; i++) {
+			System.out.print(" " + A[i]);
+		}
+		
+		System.out.println("\nB");
+		for (int i = 0; i < B.length; i++) {
+			System.out.print(" " +B[i]);
+		}
+		
+		System.out.println();
+		int i = 0;
+		int j = 0;
+
+		//efetua a troca dos valores
+		for (int k = inicio; k <= fim; k++) {
+			
+			if (i < A.length && j < B.length) { //verfica se i e j são maiores que os respectivos arrays.
+				if (A[i] < B[j]) { //Se o valor do index de A for maior que o valor do index de B
+					a[k] = A[i++]; 
+				} else {  //se não  o index que entre no array primeiro é o do array B
+					a[k] = B[j++];
+				}
+			} else if (i < A.length) {
+				a[k] = A[i++];
+			} else if (j < B.length) {
+				a[k] = B[j++];
+			}
+		}
+		
+		System.out.println("\nFULL");
+		for (int l = 0; l < a.length; l++) {
+			System.out.print(" " +a[l]);
+		}
+
+	}
+
+
+	
+}

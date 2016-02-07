@@ -1,0 +1,97 @@
+package br.com.impacta.estrutura.ordenacao;
+
+public class MergeSort {
+
+	
+	public static void main(String[] args) {
+		int[] a = new int[20];
+		
+		for (int i = 0; i < a.length; i++) {
+			a[i] = (int)(Math.random() * 220);
+		}
+		
+		mergeSort1(a, 0, a.length-1);
+		
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
+		
+	}
+	
+	
+	public static void mergeSort(int[] a,int inicio,int fim){
+		
+		if(fim <= inicio){
+			return;
+		}
+		
+		int meio = (inicio + fim )/2;
+		
+		mergeSort(a, inicio, meio);
+		mergeSort(a,meio + 1 ,fim);
+		
+		int[] A = new int[meio- inicio+1];
+		int[] B = new int[fim - meio];
+		
+		for (int i = 0; i <= meio - inicio; i++) {
+			A[i] = a[inicio+1];
+		}
+		for (int i = 0; i <= fim-meio-1; i++) {
+			B[i] = a[meio+1+i];
+		}
+		
+		int i = 0;
+		int j= 0;
+		
+		for (int k = inicio; k <= fim; k++) {
+			if(i<A.length && j < B.length){
+				if(A[i] < B[j]){
+					a[k] = A[i++];
+				}else{
+					a[k]=B[j++];
+				}
+			}else if(i<A.length){
+				a[k]=A[i++];
+			}else if(j<B.length){
+				a[k]=B[j++];
+			}
+		}
+		
+		
+	}
+	
+	public static void mergeSort1(int[] array, int inicio, int fim) {
+		if (fim <= inicio) {
+			return;
+		}
+		int meio = (inicio + fim) / 2;
+		mergeSort(array, inicio, meio);
+		mergeSort(array, meio + 1, fim);
+		int[] A = new int[meio - inicio + 1];
+		int[] B = new int[fim - meio];
+		for (int i = 0; i <= meio - inicio; i++) {
+			A[i] = array[inicio + i];
+		}
+		for (int i = 0; i <= fim - meio - 1; i++) {
+			B[i] = array[meio + 1 + i];
+		}
+		int i = 0;
+		int j = 0;
+		for (int k = inicio; k <= fim; k++) {
+			if (i < A.length && j < B.length) {
+				if (A[i] < B[j]) {
+					array[k] = A[i++];
+				} else {
+					array[k] = B[j++];
+				}
+			} else if (i < A.length) {
+				array[k] = A[i++];
+			} else if (j < B.length) {
+				array[k] = B[j++];
+			}
+		}
+	}
+
+	
+	
+}
