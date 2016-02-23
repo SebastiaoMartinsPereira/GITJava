@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 
 
-	private static String url = "jdbc:sqlserver://localhost:1433;" + "databaseName=TESTE;";
+	private static String url = "jdbc:sqlserver://localhost:1433;" + "databaseName=IMPACTA_JDBC;";
 	private static String usuario = "sa";
 	private static String pass = "NPS300892";
 	private static String driverSqlServer = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
@@ -46,32 +46,4 @@ public class ConnectionFactory {
 		}
 		return null;
 	}
-	
-	
-	
-//	private static void testeConn()
-//	{
-//		
-//		Connection conn = getConn();
-//		
-//		try {
-//			
-//			if(!conn.isClosed())
-//			{
-//				System.out.println("Yes!!!");
-//			}
-//			
-//			conn.close();
-//			
-//			if(conn.isClosed())
-//			{
-//			   System.out.println("Fechou");	
-//			}
-//			
-//		} catch (SQLException e) {
-//			
-//			e.printStackTrace();
-//		}
-//	}
-//	
 }

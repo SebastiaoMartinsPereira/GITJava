@@ -3,8 +3,11 @@ package br.com.npsoftwares.jdbc.teste;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+import javax.swing.JOptionPane;
+
 import br.com.npsoftwares.djbc.dao.ContatoDao;
 import br.com.npsoftwares.jdbc.modelo.Contato;
+import br.com.npsoftwares.jdbc.modelo.Builders.ContatoBuilder;
 
 public class TestConnection {
 
@@ -15,8 +18,11 @@ public class TestConnection {
 		ArrayList<Contato> contatos = new ArrayList<Contato>();
 
 		try {
-			
-			contato = new Contato("Caelum","contato@caelum.com.br","r. Verguerio 3185",Calendar.getInstance());
+			contato = new ContatoBuilder().ComNome("Sebastião Martins")
+					                      .ComEmail("sebastiao@npsoftwares.com.br")
+					                      .ComEndereco("r morrinhos")
+					                      .NaData(Calendar.getInstance())
+					                      .Criar();
 			
 			contatoDao.addContato(contato);
 			
@@ -26,11 +32,12 @@ public class TestConnection {
 				
 				System.out.println(contato2.toString());
 			}
-				
-			System.out.println(contatoDao.pesquisar(1).toString());
+
+			JOptionPane.showInputDialog(null, "mensagem");
+			System.out.println(contatoDao.pesquisar(5).toString());
 			
 		} catch (Exception e) {
-			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
 
 	}

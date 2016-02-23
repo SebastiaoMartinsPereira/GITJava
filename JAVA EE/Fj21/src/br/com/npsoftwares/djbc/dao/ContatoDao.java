@@ -27,7 +27,7 @@ public class ContatoDao {
 		 java.sql.Date dataForRecord = new java.sql.Date(Calendar.getInstance().getTimeInMillis());
 		
 	     StringBuilder sbQuery = new StringBuilder();
-	     sbQuery.append("INSERT INTO contatos (");
+	     sbQuery.append("INSERT INTO tb005_Contatos (");
 	     sbQuery.append("nome,email,endereco,dataNascimento)");
 	     sbQuery.append("values(?,?,?,?)");
 	     
@@ -35,7 +35,7 @@ public class ContatoDao {
 			 
 	    	 PreparedStatement stmt = conn.prepareStatement(sbQuery.toString());
 	    	 
-		     stmt.setString(1, contato.getNome());
+		     stmt.setString(1,contato.getNome());
 		     stmt.setString(2,contato.getEmail());
 		     stmt.setString(3,contato.getEndereco());
 		     stmt.setDate(4,dataForRecord);
@@ -59,7 +59,7 @@ public class ContatoDao {
 			
 		    ArrayList<Contato> contatos = new ArrayList<Contato>();
 			
-			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM contatos WHERE id < 10");
+			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM tb005_Contatos");
 			ResultSet rs  = stmt.executeQuery();
 			
 			while(rs.next()){
@@ -93,7 +93,7 @@ public class ContatoDao {
 		
 		try {
 					
-			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM contatos WHERE id = ?");
+			PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM tb005_Contatos WHERE id = ?");
 			stmt.setInt(1, id);
 			ResultSet rs  = stmt.executeQuery();
                 
@@ -111,7 +111,7 @@ public class ContatoDao {
 			
 		} catch (Exception e) {
 			
-			throw new DaoException("Erro ao adicionar novo contato: \n Local: ContatoDao-->pesquisar \n Motivo:" + e.getMessage(),e);
+			throw new DaoException("Erro durante consulta ao banco de dados: \n Local: ContatoDao-->pesquisar \n Motivo:" + e.getMessage(),e);
 		}
 		
 	}
@@ -123,7 +123,7 @@ public class ContatoDao {
 	public void altera(Contato contato){
 		
 		StringBuilder sbQuery = new StringBuilder();
-		sbQuery.append("UPDATE contatos set nome= ?,email=?,endereco=?,dataNascimento=? WHERE id = ?");
+		sbQuery.append("UPDATE tb005_Contatos set nome= ?,email=?,endereco=?,dataNascimento=? WHERE id = ?");
 		
 		try {
 			
@@ -146,7 +146,7 @@ public class ContatoDao {
 	public void remove(Contato contato){
 		
 		try {
-			PreparedStatement stmt = conn.prepareStatement("DELETE FROM contatos WHERE id = ?");
+			PreparedStatement stmt = conn.prepareStatement("DELETE FROM tb006_Contatos WHERE id = ?");
 			stmt.setLong(1, contato.getId());
 			stmt.execute();
 			stmt.close();

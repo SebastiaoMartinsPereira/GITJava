@@ -7,7 +7,23 @@ public class Funcionario {
 	String usuario;
 	String senha;
 	
+	public Funcionario(Long id,String nome,String usuario,String senha)
+	{
+		this.id = id;
+		this.nome = nome;
+		this.usuario=usuario;
+		this.senha=senha;
+		
+	}
 	
+	public Funcionario(String nome,String usuario,String senha)
+	{	
+		this.nome = nome;
+		this.usuario=usuario;
+		this.senha=senha;
+		
+	}
+	public Funcionario(){}
 	public Long getId() {
 		return id;
 	}

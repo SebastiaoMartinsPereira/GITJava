@@ -7,13 +7,12 @@ import java.util.Date;
 
 public class Contato {
 
-	private Long id;;
+	private Long id;
 	private String nome;
 	private String email;
 	private String endereco;
 	private Calendar dataNascimento;
 	
-
     /**
      * Construtor	
      */
