@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;br.com.newprog.tarefas.dao&apos; to &apos;br.com.newprog.tarefas.jpa&apos;&#x0D;&#x0A;- Original project: &apos;StartHibernate&apos;&#x0D;&#x0A;- Original element: &apos;StartHibernate/src/br.com.newprog.tarefas.dao&apos;&#x0D;&#x0A;- Renamed element: &apos;StartHibernate/src/br.com.newprog.tarefas.jpa&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;br.com.newprog.tarefas.dao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;br.com.newprog.tarefas.dao" name="br.com.newprog.tarefas.jpa" qualified="false" references="true" stamp="1457353341685" textual="false" version="1.0"/>
+</session>

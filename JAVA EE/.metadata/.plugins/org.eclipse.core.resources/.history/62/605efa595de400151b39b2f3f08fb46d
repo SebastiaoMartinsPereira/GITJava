@@ -1,0 +1,12 @@
+package br.com.newprog.tarefas;
+
+import java.util.Calendar;
+
+public class Tarefa {
+	
+	Calendar dataFinalizacao;
+	String descricao;
+	Long id;
+	Boolean isFinalizado;
+	
+}

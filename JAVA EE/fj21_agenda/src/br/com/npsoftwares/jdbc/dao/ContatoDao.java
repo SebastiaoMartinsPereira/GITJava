@@ -28,7 +28,7 @@ public class ContatoDao {
 		 java.sql.Date dataForRecord = new java.sql.Date(Calendar.getInstance().getTimeInMillis());
 		
 	     StringBuilder sbQuery = new StringBuilder();
-	     sbQuery.append("INSERT INTO contato (");
+	     sbQuery.append("INSERT INTO tb005_Contatos (");
 	     sbQuery.append("nome,email,endereco,dataNascimento)");
 	     sbQuery.append("values(?,?,?,?)");
 	     

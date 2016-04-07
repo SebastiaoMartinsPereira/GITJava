@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 
 
-	private static String url = "jdbc:sqlserver://localhost:1433;" + "databaseName=TESTE;";
+	private static String url = "jdbc:sqlserver://localhost:1433;" + "databaseName=IMPACTA_JDBC;";
 	private static String usuario = "sa";
 	private static String pass = "NPS300892";
 	private static String driverSqlServer = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
@@ -17,15 +17,11 @@ public class ConnectionFactory {
 		try {
 		 	
 			Class.forName(driverSqlServer);
-			//Class.forName();
-			
 			Connection conn = DriverManager.getConnection(url,usuario,pass);
 			return conn;
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
